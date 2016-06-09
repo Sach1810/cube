@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+     <div class="rowGame">
+      <div id="pOne" class="pSquare"  onclick="move('one')"></div>
+      <div id="pTwo" class="pSquare" onclick="move('two')"></div>
+      <div id="pThree" class="pSquare"  onclick="move('three')"></div>
+    </div>
+    <div class="rowGame">
+      <div id="pFour" class="pSquare"  onclick="move('four')"></div>
+      <div id="pFive" class="pSquare"  onclick="move('five')"></div>
+      <div id="pSix" class="pSquare"  onclick="move('six')"></div>
+    </div>
+
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/phone.js"></script>
+  </body>
+</html>

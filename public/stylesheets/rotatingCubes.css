@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Vollkorn', serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 10vh;
+  line-height: 65px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 5vh;
+  line-height: 65px;
+  text-align: center;
+}
+}
+
+p {
+  font-family: 'Vollkorn', serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+
+#openingScreen {
+  background: #d3d3d3;
+  height: 90vh;
+  width: 90vw;
+
+  margin: 4vh auto;
+  padding: 0 3vw;
+
+}
+
+.column {
+  float: left;
+  width:60%;
+  border: 5px solid #000;
+}
+
+
+
+.qrcode {
+  background-color: #fff;
+  width:20vw;
+  padding: 3vh;
+}
+
+
+
+.hide {
+  display: none;
+}
+
+#countdown {
+  font-size:20vh;
+}
+
+.container {
+  display: inline-block;
+  padding: 10vw 0 0 8%;
+  margin-left:15%;
+} 
+        
+.cube {
+  width: 34vw;
+  height: 34vw;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  float: left;
+  margin:3vw;
+}
+ 
+.face {
+  width: 34vw;
+  height: 34vw;
+  position: absolute;
+  font-size: 80px;
+  text-align: center;
+  line-height: 20vw;
+  background-color: #999999;
+  box-shadow: inset 0 0 20px #333333;
+  opacity: 0.6;
+}
+ 
+.cube .one {
+  -webkit-transform: translateZ(17vw);
+  transform: translateZ(17vw);
+}
+ 
+.cube .two {
+  -webkit-transform: rotateY(90deg) translateZ(17vw);
+  transform: rotateY(90deg) translateZ(17vw);
+}
+
+.cube .three {
+  -webkit-transform: rotateY(180deg) translateZ(17vw);
+  transform: rotateY(180deg) translateZ(17vw);
+}
+ 
+.cube .four {
+  -webkit-transform: rotateY(-90deg) translateZ(17vw);
+  transform: rotateY(-90deg) translateZ(17vw);
+}
+ 
+.cube .five {
+  -webkit-transform: rotateX(90deg) translateZ(17vw);
+  transform: rotateX(90deg) translateZ(17vw);
+}
+
+.cube .six {
+  -webkit-transform: rotateX(-90deg) translateZ(17vw) rotate(0deg);
+  transform: rotateX(-90deg) translateZ(17vw) rotate(0deg);
+}
+
+/*********** phone ***********/
+
+.pSquare {
+height: 50vh;
+width: 32.5vw;
+background-color: #000;
+display: inline-block;
+}
+

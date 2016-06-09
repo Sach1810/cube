@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Computer</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+<!--     <div id="countdown" class="show"></div> -->
+    
+         <div id="do-results">
+         <div id="cube" class="cube">
+            <div class="face one">1</div>
+            <div class="face two">2</div>
+            <div class="face three">3</div>
+            <div class="face four">4</div>
+            <div class="face five">5</div>
+            <div class="face six">6</div>
+         </div>
+
+                  <div id="cube1" class="cube">
+            <div class="face one">1</div>
+            <div class="face two">2</div>
+            <div class="face three">3</div>
+            <div class="face four">4</div>
+            <div class="face five">5</div>
+            <div class="face six">6</div>
+         </div>
+
+                  <div id="cube2" class="cube">
+            <div class="face one">1</div>
+            <div class="face two">2</div>
+            <div class="face three">3</div>
+            <div class="face four">4</div>
+            <div class="face five">5</div>
+            <div class="face six">6</div>
+         </div>
+
+
+    <div id="gameOne">
+     <div class="rowGameOne">
+      <div id="one" class="square rotateX"></div>
+      <div id="two" class="square"></div>
+      <div id="three" class="square"></div>
+    </div>
+    <div class="rowGameOne">
+      <div id="four" class="square""></div>
+      <div id="five" class="square"></div>
+      <div id="six" class="square"></div>
+    </div>
+    <a href="/">Home</a>
+    <a href="#" onclick="gameOne();">Play Now</a>
+    <div>time left:<div id="gameTime"></div></div>
+    <div>score<div id="score"></div></div>
+    <div>right:<div id="right"></div></div>
+    <div>wrong:<div id="wrong"></div></div>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/main.js"></script>
+  </body>
+</html>

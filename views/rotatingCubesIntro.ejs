@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Computer</title>
+    <link rel='stylesheet' href='/stylesheets/rotatingCubes.css' />
+  </head>
+  <body>
+
+    <div id="openingScreen">
+      <div class="title">
+        <h1>Rotating Cubes</h1>
+      </div>
+      <div class="column">
+        <a href="/rotating-cubes/play">
+          <h2 class="playerBtn">1 player</h2>
+        </a>
+      </div>
+      <div class="column">
+        <a href="/rotating-cubes/player1" onclick="players(2)">
+          <h2 class="playerBtn">2 players</h2>
+        </a>
+      </div>
+    </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery-qrcode-0.14.0/jquery-qrcode-0.14.0.min.js"></script>
+  <script type="text/javascript" src="javascripts/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Computer</title>
+    <link rel='stylesheet' href='/stylesheets/rotatingCubes.css' />
+  </head>
+  <body>
+    <div id="openingScreen">
+      <div class="title">
+        <h1>Rotating Cubes</h1>
+        <div id="qrcode" class="qrcode"></div>
+        <div id="webAddress"></div><br>
+        <div> Either use qr code or go to link on your phone. Then press start</div>
+        <button onclick="gameOne()">Start</button> 
+      </div>
+      <div id="countdown" class="hide">
+      </div>
+     
+
+      <div class="gameEnd hide">
+        <div class="replay" onclick="gameOne()">Replay</div><br>
+        <a href="/games"> Back to games list</a>
+      </div>
+    </div>
+    
+      <div id="do-results" class="hide">
+         
+        <div class="container">
+          <div id="cubeOne" class="cube">
+            <div class="face one"></div>
+            <div class="face two"></div>
+            <div class="face three"></div>
+            <div class="face four"></div>
+            <div class="face five"></div>
+            <div class="face six"></div>
+          </div>
+          <div id="cubeTwo" class="cube">
+            <div class="face one"></div>
+            <div class="face two"></div>
+            <div class="face three"></div>
+            <div class="face four"></div>
+            <div class="face five"></div>
+            <div class="face six"></div>
+          </div>
+          <div id="cubeThree" class="cube">
+            <div class="face one"></div>
+            <div class="face two"></div>
+            <div class="face three"></div>
+            <div class="face four"></div>
+            <div class="face five"></div>
+            <div class="face six"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div id="cubeFour" class="cube">
+            <div class="face one"></div>
+            <div class="face two"></div>
+            <div class="face three"></div>
+            <div class="face four"></div>
+            <div class="face five"></div>
+            <div class="face six"></div>
+          </div>
+          <div id="cubeFive" class="cube">
+            <div class="face one"></div>
+            <div class="face two"></div>
+            <div class="face three"></div>
+            <div class="face four"></div>
+            <div class="face five"></div>
+            <div class="face six"></div>
+          </div>
+          <div id="cubeSix" class="cube">
+            <div class="face one"></div>
+            <div class="face two"></div>
+            <div class="face three"></div>
+            <div class="face four"></div>
+            <div class="face five"></div>
+            <div class="face six"></div>
+         </div>
+        </div>
+        </div>
+
+
+    <div id="gameOne">
+     <div class="rowGameOne">
+      <div id="one" class="square rotateX"></div>
+      <div id="two" class="square"></div>
+      <div id="three" class="square"></div>
+    </div>
+    <div class="rowGameOne">
+      <div id="four" class="square""></div>
+      <div id="five" class="square"></div>
+      <div id="six" class="square"></div>
+    </div>
+    <div>time left:<div id="gameTime"></div></div>
+    <div>score<div id="score"></div></div>
+    <div>right:<div id="right"></div></div>
+    <div>wrong:<div id="wrong"></div></div>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script type="text/javascript" src="../jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="../jquery-qrcode-0.14.0/jquery-qrcode-0.14.0.min.js"></script>
+  <script type="text/javascript" src="../javascripts/main.js"></script>
+
+  </body>
+</html>

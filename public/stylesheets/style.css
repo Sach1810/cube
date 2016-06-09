@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Vollkorn', serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 10vh;
+  line-height: 65px;
+  text-align: center;
+}
+
+p {
+  font-family: 'Vollkorn', serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.banner {
+  margin-top:5px;
+  height:70vh;
+  width: 100vw;
+  background: #fff url("../images/main-background.jpeg") no-repeat fixed bottom; 
+  background-size: cover;
+  padding-top:15%;
+}
+
+.goToGames {
+  width:30vw;
+  color: #fff;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0.7);
+  text-align: center;
+  padding:2vh;
+  font-size: 7vh;
+}
+
+.goToGames a{
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.clickContinue {
+  font-size:4vh;
+}
+
+#latestGames {
+  margin-left: 3%;
+  overflow: hidden;
+
+}
+
+.gameDisplay {
+  height: 30vw;
+  width: 30vw;
+  background-color: #222;
+  float: left;
+  margin-right: 1vw;
+}
+
+#gamesList {
+  width: 100vw;
+}
+
+.gameListDisplay {
+  height: 30vw;
+  width: 100vw;
+  background-color: #222;
+  margin-bottom: 1vh;
+  padding: 2vh 2vh;
+}
+
+.gameListPic {
+  background-color: #fff;
+  height:26vw;
+  width: 26vw;
+  float: left;
+}
+
+.gameListDescription {
+  width: 68vw;
+  height:26vw;
+  background-color: #fff;
+  float: left;
+  margin-left: 2vw;
+}
+
+.goToGame {
+  margin-left: 25vw;
+  color: #222;
+  border: 5px solid #222;
+  border-radius: 3px;
+}

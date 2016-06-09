@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Computer</title>
+    <link rel='stylesheet' href='/stylesheets/rotatingCubes.css' />
+  </head>
+  <body>
+    <a href="/rotating-cubes-phone">phone</a>
+
+      <div id="do-results">
+        <div class="container">
+          <div id="cubeOne" class="cube">
+            <div class="face one"></div>
+            <div class="face two"></div>
+            <div class="face three"></div>
+            <div class="face four"></div>
+            <div class="face five"></div>
+            <div class="face six"></div>
+          </div>
+        </div>
+      </div>
+
+
+
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script type="text/javascript" src="../jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="../jquery-qrcode-0.14.0/jquery-qrcode-0.14.0.min.js"></script>
+  <script type="text/javascript" src="../javascripts/main.js"></script>
+<script>
+  socket.on('phoneData', function(coordinates){
+
+  document.getElementById('cubeOne').style.webkitTransform = 
+    document.getElementById('cubeOne').style.transform =
+      'rotateX(' + coordinates.az + 'deg) ' +
+      'rotateY(' + coordinates.gy + 'deg) ' +
+      'rotateZ(' + coordinates.bx + 'deg)';
+});
+</script>
+  </body>
+</html>
